@@ -124,8 +124,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/content/articles/article.html',
-      filename: './content/articles/article.html',
+      template: './src/articles/article.html',
+      filename: './articles/article.html',
       chunks: ['index']
     }),
 
@@ -133,8 +133,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/content/dict/collections/collection.html',
-      filename: './content/dict/collections/collection.html',
+      template: './src/dict/collection.html',
+      filename: './dict/collection.html',
       chunks: ['index']
     }),
 
@@ -142,8 +142,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/content/dict/words/word.html',
-      filename: './content/dict/words/word.html',
+      template: './src/dict/word.html',
+      filename: './dict/word.html',
       chunks: ['index']
     }),
 
@@ -151,8 +151,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/content/dict/all_words.html',
-      filename: './content/dict/all_words.html',
+      template: './src/dict/all_words.html',
+      filename: './dict/all_words.html',
       chunks: ['index']
     }),
 
@@ -160,8 +160,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/content/dict/rules.html',
-      filename: './content/dict/rules.html',
+      template: './src/dict/rules.html',
+      filename: './dict/rules.html',
       chunks: ['index']
     }),
 
@@ -169,8 +169,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/content/media/films.html',
-      filename: './content/media/films.html',
+      template: './src/media/films.html',
+      filename: './media/films.html',
       chunks: ['index']
     }),
 
@@ -178,8 +178,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/content/media/series.html',
-      filename: './content/media/series.html',
+      template: './src/media/series.html',
+      filename: './media/series.html',
       chunks: ['index']
     }),
 
@@ -187,8 +187,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/content/news/news_category.html',
-      filename: './content/news/news_category.html',
+      template: './src/news/news_category.html',
+      filename: './news/news_category.html',
       chunks: ['index']
     }),
 
