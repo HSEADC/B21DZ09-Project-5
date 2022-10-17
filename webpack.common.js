@@ -93,6 +93,33 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // dict
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/dict.html',
+      filename: './dict.html',
+      chunks: ['index']
+    }),
+
+    // media
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/media.html',
+      filename: './media.html',
+      chunks: ['index']
+    }),
+
+    // news
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/news.html',
+      filename: './news.html',
+      chunks: ['index']
+    }),
+
     // article
     new HtmlWebpackPlugin({
       hash: true,
