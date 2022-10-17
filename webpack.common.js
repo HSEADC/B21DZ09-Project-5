@@ -75,7 +75,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
-    // Landing page
+    // promo
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -84,13 +84,85 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // Internal pages
+    // about
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
+      template: './src/about.html',
+      filename: './about.html',
+      chunks: ['index']
+    }),
+
+    // article
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/content/articles/article.html',
+      filename: './content/articles/article.html',
+      chunks: ['index']
+    }),
+
+    // collection
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/content/dict/collections/collection.html',
+      filename: './content/dict/collections/collection.html',
+      chunks: ['index']
+    }),
+
+    // word
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/content/dict/words/word.html',
+      filename: './content/dict/words/word.html',
+      chunks: ['index']
+    }),
+
+    // all_words
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/content/dict/all_words.html',
+      filename: './content/dict/all_words.html',
+      chunks: ['index']
+    }),
+
+    // rules
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/content/dict/rules.html',
+      filename: './content/dict/rules.html',
+      chunks: ['index']
+    }),
+
+    // films
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/content/media/films.html',
+      filename: './content/media/films.html',
+      chunks: ['index']
+    }),
+
+    // series
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/content/media/series.html',
+      filename: './content/media/series.html',
+      chunks: ['index']
+    }),
+
+    // news_category
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/content/news/news_category.html',
+      filename: './content/news/news_category.html',
+      chunks: ['index']
     }),
 
     // Partials
