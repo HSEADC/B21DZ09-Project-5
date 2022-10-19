@@ -12,6 +12,98 @@ body.index {
     justify-content: center;
     gap: 20px;
   }
+  .emoji-block {
+    position: absolute;
+
+    .emoji {
+      opacity: 0;
+      transition: transform 0.15s ease-out;
+
+      &:hover {
+        transform: rotate(-30deg);
+      }
+    }
+
+    #emoji1 {
+      position: absolute;
+      top: 36vh;
+      left: -5vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.8s 1
+        forwards;
+    }
+    #emoji2 {
+      position: absolute;
+      top: 8vh;
+      left: 10vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.2s 1
+        forwards;
+    }
+    #emoji3 {
+      position: absolute;
+      top: -4vh;
+      left: 38vw;
+      z-index: 2000;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.5s 1
+        forwards;
+    }
+    #emoji4 {
+      position: absolute;
+      top: 21vh;
+      left: 67.5vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 1s 1 forwards;
+    }
+    #emoji5 {
+      position: absolute;
+      top: 10vh;
+      left: 84vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.7s 1
+        forwards;
+    }
+    #emoji6 {
+      position: absolute;
+      top: 82vh;
+      left: 5vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.6s 1
+        forwards;
+    }
+    #emoji7 {
+      position: absolute;
+      top: 56vh;
+      left: 23vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.3s 1
+        forwards;
+    }
+    #emoji8 {
+      position: absolute;
+      top: 71vh;
+      left: 46vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.9s 1
+        forwards;
+    }
+    #emoji9 {
+      position: absolute;
+      top: 54vh;
+      left: 75vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.4s 1
+        forwards;
+    }
+    #emoji10 {
+      position: absolute;
+      top: 71vh;
+      left: 93vw;
+      animation: emoji-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 1.1s 1
+        forwards;
+    }
+
+    @keyframes emoji-opacity {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 100;
+      }
+    }
+  }
   section.s2 {
     align-items: center;
     gap: 20px;
@@ -24,8 +116,5 @@ body.index {
     img {
       width: 100%;
     }
-  }
-  section.footer {
-    background-color: var(--blue);
   }
 }

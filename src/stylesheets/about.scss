@@ -1,12 +1,36 @@
 body.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #eee;
 
-  & > div,
-  & > a {
-    margin: 10px 0;
+  h2.s1 {
+    text-align: center;
+    color: var(--white);
+  }
+  section.s1 {
+    position: relative;
+    height: calc(100vh - 24px);
+    background-color: rgba(0, 0, 0, 1);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    animation: video_background-opacity 0.4s cubic-bezier(0.7, 0, 0.05, 1) 0.1s
+      1 forwards;
+
+    @keyframes video_background-opacity {
+      from {
+        background-color: rgba(0, 0, 0, 1);
+      }
+      to {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    video {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -100;
+    }
   }
 }
