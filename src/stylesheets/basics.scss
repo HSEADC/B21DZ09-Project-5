@@ -26,6 +26,7 @@ body.about {
       align-items: center;
       padding: 50px;
       color: white;
+      background-color: var(--blue);
 
       .block1 {
         display: flex;
@@ -51,6 +52,9 @@ body.about {
             text-decoration: none;
             border-radius: 100px;
 
+            &:hover {
+              outline: 2px solid rgba(255, 255, 255, 0.4);
+            }
             &:focus {
               outline: 2px solid var(--white);
             }
