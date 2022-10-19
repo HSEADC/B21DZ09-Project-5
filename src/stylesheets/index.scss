@@ -1,12 +1,31 @@
 body.index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #eee;
 
-  & > div,
-  & > a {
-    margin: 10px 0;
+  h2.s1 {
+    text-align: center;
+    color: var(--white);
+  }
+  section.s1 {
+    height: calc(100vh - 24px);
+    background-color: var(--blue);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  section.s2 {
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0 50px 0;
+
+    h1 {
+      text-align: center;
+      width: 85%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  section.footer {
+    background-color: var(--blue);
   }
 }
