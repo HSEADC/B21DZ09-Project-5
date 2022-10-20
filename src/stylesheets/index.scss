@@ -1,17 +1,6 @@
 body.index {
   background-color: #eee;
 
-  h2.s1 {
-    text-align: center;
-    color: var(--white);
-  }
-  section.s1 {
-    height: calc(100vh - 24px);
-    background-color: var(--blue);
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
   .emoji-block {
     position: absolute;
 
@@ -104,17 +93,33 @@ body.index {
       }
     }
   }
-  section.s2 {
-    align-items: center;
-    gap: 20px;
-    padding: 50px 0 50px 0;
 
-    h1 {
-      text-align: center;
-      width: 85%;
+  section {
+    &.s1 {
+      height: calc(100vh - 24px);
+      background-color: var(--blue);
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      h2 {
+        text-align: center;
+        color: var(--white);
+      }
     }
-    img {
-      width: 100%;
+
+    &.s2 {
+      align-items: center;
+      gap: 20px;
+      padding: 50px 0 50px 0;
+
+      h1 {
+        text-align: center;
+        width: 85%;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
 }
