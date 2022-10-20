@@ -1,3 +1,4 @@
+// common
 *,
 *::before,
 *::after {
@@ -284,6 +285,7 @@ h2 {
   font-weight: 600;
   font-size: 20px;
   line-height: 90%;
+  text-transform: uppercase;
 }
 .caption2 {
   font-family: 'Inter', Helvetica, Arial, sans-serif;
