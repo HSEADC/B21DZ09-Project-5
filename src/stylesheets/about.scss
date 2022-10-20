@@ -257,6 +257,19 @@ body.about {
           display: flex;
           flex-direction: column;
           gap: 8px;
+
+          a {
+            color: var(--white);
+
+            &:hover {
+              opacity: 75%;
+              transition: 0.05s ease-out;
+            }
+            &:active {
+              opacity: 50%;
+              transition: 0.01s ease-out;
+            }
+          }
         }
       }
     }
