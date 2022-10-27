@@ -1,5 +1,12 @@
 body.platform_page {
+  height: 100vh;
   background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
 
   .menu {
     background-color: var(--white);
@@ -86,5 +93,22 @@ body.platform_page {
   .logo:hover .logo-move-letters {
     transform: translateY(140px);
     animation: logo-move-letters-1 0.5s cubic-bezier(1, 0, 0, 1) 0s 1 forwards;
+  }
+
+  .structure-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 12px;
+    background-color: var(--gray);
+    color: var(--black);
+  }
+  .structure-links:hover {
+    background-color: var(--gray-h);
+  }
+  .structure-links:active {
+    background-color: var(--gray-c);
   }
 }

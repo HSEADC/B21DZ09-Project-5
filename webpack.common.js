@@ -125,7 +125,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/article.html',
       filename: './articles/article.html',
-      chunks: ['index']
+      chunks: ['page']
     }),
 
     // collection
@@ -143,7 +143,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/dict/word.html',
       filename: './dict/word.html',
-      chunks: ['index']
+      chunks: ['page']
     }),
 
     // all_words
