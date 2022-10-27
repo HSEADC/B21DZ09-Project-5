@@ -1,11 +1,90 @@
 body.platform_page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--white);
 
-  & > div,
-  & > a {
-    margin: 10px 0;
+  .menu {
+    background-color: var(--white);
+    .menu-toggle-block {
+      &:hover #hidden {
+        display: flex;
+      }
+    }
+
+    .menu-toggle {
+      background: var(--gray);
+      color: var(--black);
+
+      &#visible:hover {
+        background-color: var(--gray-h);
+      }
+      &#hidden:hover {
+        background-color: var(--gray-h);
+      }
+      &#hidden:active {
+        opacity: 100%;
+        background-color: var(--gray-c);
+      }
+    }
+  }
+
+  .menu-platform {
+    background-color: transparent;
+    width: auto;
+    padding: 0px;
+    padding-top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 200;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .menu-toggle-block {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .menu-toggle {
+      &#active {
+        cursor: default;
+        background-color: var(--blue);
+        color: var(--white);
+      }
+      &#active:hover {
+        background-color: #1061db;
+      }
+      &#inactive:hover {
+        background-color: var(--gray-h);
+      }
+      &#inactive:active {
+        opacity: 100%;
+        background-color: var(--gray-c);
+      }
+    }
+  }
+
+  .logo-move-letters {
+    animation: none;
+    transform: translateY(0px);
+
+    @keyframes logo-move-letters-1 {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-140px);
+      }
+      51% {
+        transform: translateY(140px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .logo:hover .logo-move-letters {
+    transform: translateY(140px);
+    animation: logo-move-letters-1 0.5s cubic-bezier(1, 0, 0, 1) 0s 1 forwards;
   }
 }
