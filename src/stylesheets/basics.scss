@@ -7,11 +7,15 @@
 a {
   text-decoration: none;
 }
-body.index,
-body.about {
+html,
+body {
+  overflow-x: hidden;
+}
+body {
   padding-top: 12px;
 
   section {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: calc(100vw - 24px);
