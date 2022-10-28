@@ -263,6 +263,43 @@ body {
       }
     }
   }
+
+  .menu-platform {
+    background-color: transparent;
+    width: auto;
+    padding: 0px;
+    padding-top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 200;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .menu-toggle-block {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .menu-toggle {
+      &#active {
+        cursor: default;
+        background-color: var(--blue);
+        color: var(--white);
+      }
+      &#active:hover {
+        background-color: #1061db;
+      }
+      &#inactive:hover {
+        background-color: var(--gray-h);
+      }
+      &#inactive:active {
+        opacity: 100%;
+        background-color: var(--gray-c);
+      }
+    }
+  }
 }
 
 // text

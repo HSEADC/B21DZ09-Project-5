@@ -225,7 +225,11 @@ body.about {
     }
 
     &.s5 {
+      padding: 0;
+
       .b1 {
+        margin-left: 28px;
+        margin-top: 28px;
         width: 100%;
         display: flex;
         gap: 10px;
