@@ -1,11 +1,60 @@
-body.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body {
+  padding-top: 101px;
 
-  & > div,
-  & > a {
-    margin: 10px 0;
+  .body {
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .menu {
+    padding-bottom: 28px;
+    .menu-toggle-block {
+      &:hover #hidden {
+        display: flex;
+      }
+    }
+
+    .menu-toggle {
+      background: var(--gray);
+      color: var(--black);
+
+      &#visible:hover {
+        background-color: var(--gray-h);
+      }
+      &#hidden:hover {
+        background-color: var(--gray-h);
+      }
+      &#hidden:active {
+        opacity: 100%;
+        background-color: var(--gray-c);
+      }
+    }
+  }
+
+  .logo-move-letters {
+    animation: none;
+    transform: translateY(0px);
+
+    @keyframes logo-move-letters-1 {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-140px);
+      }
+      51% {
+        transform: translateY(140px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .logo:hover .logo-move-letters {
+    transform: translateY(140px);
+    animation: logo-move-letters-1 0.5s cubic-bezier(1, 0, 0, 1) 0s 1 forwards;
   }
 }

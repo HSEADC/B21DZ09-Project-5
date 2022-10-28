@@ -1,0 +1,117 @@
+body.word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  .word-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100vw;
+    justify-content: center;
+
+    .word-block {
+      height: 550px;
+      width: 80%;
+      max-width: 904px;
+      background-color: var(--gray);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 20px;
+      border-radius: 12px;
+      gap: 8px;
+
+      .caption1 {
+        opacity: 50%;
+      }
+      .labels {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        .label {
+          border-radius: 8px;
+          color: var(--white);
+          padding: 8px 10px;
+          background: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+
+    .hidden {
+      z-index: 50;
+      width: 1%;
+      flex: 1 1;
+      justify-content: center;
+      padding: 40px;
+
+      &.left {
+        border-radius: 0px 12px 12px 0px;
+        align-items: flex-start;
+      }
+      &.right {
+        border-radius: 12px 0px 0px 12px;
+        align-items: flex-end;
+      }
+
+      .circle {
+        width: 86px;
+        height: 86px;
+        background-color: var(--white);
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background-color: var(--gray-h);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .signs-block {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 904px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .sign {
+      width: 220px;
+      height: 220px;
+      background-color: var(--gray);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--gray-h);
+      }
+    }
+  }
+
+  .description-block {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 80%;
+    max-width: 904px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .body {
+      opacity: 70%;
+    }
+  }
+}
