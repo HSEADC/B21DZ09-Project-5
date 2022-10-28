@@ -134,7 +134,7 @@ body.article {
       border: 1px solid #eeeeee;
     }
     img.film {
-      height: 400px;
+      // height: 400px;
       width: 100%;
       border-radius: 12px;
     }
@@ -147,6 +147,7 @@ body.article {
       justify-content: center;
       align-items: center;
       color: var(--white);
+      cursor: pointer;
 
       .icon {
         position: absolute;
@@ -168,6 +169,57 @@ body.article {
 
         .icon {
           background-image: url('./images/kinopoisk.svg');
+        }
+        &:hover {
+          background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2)
+            ),
+            radial-gradient(
+              99.45% 24158.62% at 2.38% 100%,
+              #ff5500 0%,
+              #bbff00 100%
+            );
+        }
+      }
+      &.amedia {
+        background: var(--black);
+
+        .icon {
+          background: url('./images/amediateka.png') no-repeat center center;
+        }
+        &:hover {
+          background: linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0.2),
+              rgba(255, 255, 255, 0.2)
+            ),
+            #000000;
+        }
+      }
+      &.okko {
+        background: radial-gradient(
+          62% 15062.19% at 22.46% 100%,
+          #311265 0%,
+          #61228d 100%
+        );
+
+        .icon {
+          background: url('./images/okko.svg') no-repeat center center;
+          background-size: contain;
+        }
+        &:hover {
+          background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2)
+            ),
+            radial-gradient(
+              62% 15062.19% at 22.46% 100%,
+              #311265 0%,
+              #61228d 100%
+            );
         }
       }
     }

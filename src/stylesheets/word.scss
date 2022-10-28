@@ -38,6 +38,11 @@ body.word {
           color: var(--white);
           padding: 8px 10px;
           background: rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.6);
+          }
         }
       }
     }

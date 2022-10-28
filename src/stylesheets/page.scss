@@ -8,6 +8,17 @@ body {
     line-height: 120%;
   }
 
+  .button-transition {
+    transition: 0.05s ease-out;
+
+    &:hover {
+      transition: 0.05s ease-out;
+    }
+    &:active {
+      transition: 0.01s ease-out;
+    }
+  }
+
   .menu {
     padding-bottom: 28px;
     .menu-toggle-block {
